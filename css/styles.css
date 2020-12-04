@@ -1128,38 +1128,38 @@ input[type='checkbox'] {
 	width: 90%;
 }
 
-.tabs #tab-2 .list-unstyled {
+.tabs .tab-2 .list-unstyled {
 	margin-top: 1.75rem;
 	margin-bottom: 0;
 	vertical-align: top;
 }
 
-.tabs #tab-2 .list-unstyled .media {
+.tabs .tab-2 .list-unstyled .media {
 	margin-bottom: 2rem;
 }
 
-.tabs #tab-2 .list-unstyled .media-bullet {
+.tabs .tab-2 .list-unstyled .media-bullet {
 	color: #14bf98;
 	font-weight: 600;
 	font-size: 2rem;
 	line-height: 2rem;
 }
 
-.tabs #tab-2 .list-unstyled .media-body {
+.tabs .tab-2 .list-unstyled .media-body {
 	margin-left: 0.875rem;
 }
 
-.tabs #tab-3 .list-unstyled .fas {
+.tabs .style3 .list-unstyled .fas {
 	color: #14bf98;
 	font-size: 0.5rem;
 	line-height: 1.375rem;
 }
 
-.tabs #tab-3 .list-unstyled .media-body {
+.tabs .style3 .list-unstyled .media-body {
 	margin-left: 0.625rem;
 }
 
-.tabs #tab-3 .list-unstyled {
+.tabs .style3 .list-unstyled {
 	margin-bottom: 1.75rem;
 }
 
@@ -1945,13 +1945,13 @@ a:hover.back-to-top {
 		max-width: 70%;
 	}
 
-	.tabs #tab-2 .list-unstyled {
+	.tabs .tab-2 .list-unstyled {
 		display: inline-block;
 		width: 45%;
 		margin-top: 0;
 	}
 	
-	.tabs #tab-2 .list-unstyled.first {
+	.tabs .tab-2 .list-unstyled.first {
 		margin-right: 2rem;
 	}
 	/* end of details 2 */
@@ -2337,7 +2337,7 @@ a:hover.back-to-top {
 		margin-left: auto;
 	}
 
-	.tabs #tab-2 .media-wrapper.first {
+	.tabs .tab-2 .media-wrapper.first {
 		margin-right: 2rem;
 	}
 	/* end of details 2 */
