@@ -481,6 +481,12 @@ mark,
   height: auto;
 }
 
+.img-medium {
+  max-width: 70%;
+  max-height: 50%;
+
+}
+
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
