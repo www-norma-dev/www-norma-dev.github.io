@@ -1363,13 +1363,15 @@
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
     <script>
-      /* SHOW ALL*/
-      var $grid = $('.grid').isotope({
-          // options
-          itemSelector: '.element-item',
-          layoutMode: 'fitRows'
-      });
-      $grid.isotope({ filter: '*' });
+        $(window).on('load', function() {
+            $.getScript('js/isotope.pkgd.min.js', function() {
+            var $grid = $('.grid').isotope({
+                                              // options
+                                              itemSelector: '.element-item',
+                                              layoutMode: 'fitRows'
+                                          });
+            $grid.isotope({ filter: '*' });});
+        });
     </script>
 </body>
 </html>
