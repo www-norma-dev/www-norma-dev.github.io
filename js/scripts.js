@@ -10,12 +10,12 @@
 	
 	/* Preloader */
 	$(window).on('load', function() {
-		var preloaderFadeOutTime = 250;
+		var preloaderFadeOutTime = 150;
 		function hidePreloader() {
 			var preloader = $('.spinner-wrapper');
 			setTimeout(function() {
 				preloader.fadeOut(preloaderFadeOutTime);
-			}, 250);
+			}, 150);
 		}
 		hidePreloader();
 	});
