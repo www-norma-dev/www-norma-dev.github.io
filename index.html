@@ -940,29 +940,6 @@
                     </div> <!-- end of team-member -->
                     <!-- end of team member -->
 
-                    <!-- Team Member -->
-                    <div class="team-member">
-                        <div class="image-wrapper">
-                            <img class="img-fluid" src="images/team-4.jpg" alt="Thomas COURVALIN">
-                        </div> <!-- end of image wrapper -->
-                        <p class="p-large">Thomas COURVALIN</p>
-                        <p class="job-title">In-House Counsel</p>
-                        <span class="social-icons">
-                          <span class="fa-stack">
-                                <a href="https://www.linkedin.com/in/thomascourvalin/">
-                                    <span class="hexagon"></span>
-                                    <i class="fab fa-linkedin fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="https://www.youtube.com/channel/UCsZNG4V7rX6c9euLSj51qhg">
-                                    <span class="hexagon"></span>
-                                    <i class="fas fa-play-circle fa-stack-1x"></i>
-                                </a>
-                            </span>
-                        </span>
-                    </div> <!-- end of team-member -->
-                    <!-- end of team member -->
 
                     <!-- Team Member -->
                     <div class="team-member">
@@ -1363,13 +1340,15 @@
     <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
     <script src="js/scripts.js"></script> <!-- Custom scripts -->
     <script>
-      /* SHOW ALL*/
-      var $grid = $('.grid').isotope({
-          // options
-          itemSelector: '.element-item',
-          layoutMode: 'fitRows'
-      });
-      $grid.isotope({ filter: '*' });
+        $(window).on('load', function() {
+            $.getScript('js/isotope.pkgd.min.js', function() {
+            var $grid = $('.grid').isotope({
+                                              // options
+                                              itemSelector: '.element-item',
+                                              layoutMode: 'fitRows'
+                                          });
+            $grid.isotope({ filter: '*' });});
+        });
     </script>
 </body>
 </html>
